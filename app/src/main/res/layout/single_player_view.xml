@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="130dp"
+    android:layout_height="200dp"
+    app:cardCornerRadius="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/player_image"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/cricketer_photo"
+            android:scaleType="fitXY"
+
+            app:layout_constraintBottom_toTopOf="@+id/player_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/player_name"
+            android:layout_width="match_parent"
+            android:layout_height="35sp"
+            android:gravity="center"
+            android:background="@android:color/holo_blue_dark"
+            android:text="Sakib Al Hasan"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/player_image" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--<ImageView
+        android:id="@+id/player_image"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/cricketer_photo"
+        android:scaleType="fitXY"
+        android:src="@drawable/sakib" />
+
+    <TextView
+        android:id="@+id/player_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/colorPrimary"
+        android:text="Sakib Al Hasan"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textColor="#ffffff" />-->
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BDCricketers</string>
+    <string name="cricketer_photo">cricketer photo</string>
+    <string name="processing">Processing...</string>
+</resources>
